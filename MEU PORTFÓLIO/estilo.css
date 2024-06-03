@@ -1,0 +1,75 @@
+#principal {
+    margin-top: 10px;
+}
+
+#menu {
+    list-style-type: none;
+}
+#menu li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 130px;
+    border-left: solid rgba(0, 0, 255, 0.534) 2px;
+}
+#logo , #navegação {
+    float:inline-start
+}
+#navegação {
+    margin-left: 20px;
+}
+
+body {
+    background-color: #dfdfee
+}
+
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content {
+    text-align: center;
+    color: rgb(78, 78, 175);
+    
+  
+}
+
+.fotinhacapa {
+    text-align:right;
+    
+}
+
+.portfolio {
+    color: rgb(78, 78, 175);
+}
+
+.apresentação{
+    text-align: left;
+    text-size-adjust: 20%;
+    margin-top: 10%;
+    margin-right: 50%;
+    color: rgb(78, 78, 175);
+}
+
+.fotosobre{
+    color: rgb(78, 78, 175);
+}
+.textovídeo{
+    color: rgb(78, 78, 175);
+}
+
+.textofotos{
+    color: rgb(78, 78, 175);
+}
+.textosobre1{
+    color: rgb(78, 78, 175);
+}
+.textosobre2{
+    color: rgb(78, 78, 175);
+}
+.textosobre3{
+    color: rgb(78, 78, 175);
+}
