@@ -32,6 +32,9 @@ body {
 
 .content {
     text-align: center;
+    color: rgb(78, 78, 175);
+    
+  
 }
 
 .fotinhacapa {
@@ -39,9 +42,8 @@ body {
     
 }
 
-.portfólio {
-    text-align: left;
-    margin-top:50%;
+.portfolio {
+    color: rgb(78, 78, 175);
 }
 
 .apresentação{
@@ -49,4 +51,25 @@ body {
     text-size-adjust: 20%;
     margin-top: 10%;
     margin-right: 50%;
+    color: rgb(78, 78, 175);
+}
+
+.fotosobre{
+    color: rgb(78, 78, 175);
+}
+.textovídeo{
+    color: rgb(78, 78, 175);
+}
+
+.textofotos{
+    color: rgb(78, 78, 175);
+}
+.textosobre1{
+    color: rgb(78, 78, 175);
+}
+.textosobre2{
+    color: rgb(78, 78, 175);
+}
+.textosobre3{
+    color: rgb(78, 78, 175);
 }
