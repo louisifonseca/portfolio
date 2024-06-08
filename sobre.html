@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Louisi Fonseca</title>
+    <script src="https://kit.fontawesome.com/ce94c63dce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" type="image/png" href="./imagens/Logotipo Louisi .png" />
 </head>
-<link rel="stylesheet" href="estilo.css">
+
 <body>
-    <div id="principal">
-        <div id="logo">
-            <a href="home.html"><img src="imagens/Logotipo Louisi .png" width="150" alt="Logo Louisi"></a>
-        </div> <!--INSERIR O MENU-->
-       <div id="navegação"> 
-        <ul id="menu">
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-        <li><a href="fotos.html">FOTOS</a></li>
-        <li><a href="videos.html">VÍDEOS</a></li>
-        <li><a href="contato.html">CONTATOS</a></li>
-        </ul>
-       </div>
-
-       <div class="content">
-        <h1>SOBRE MIM  </h1> </div>
-
-        <div class="fotosobre">
-            <img src="imagens/imagem2.jpg" width="300" alt="imagem2">
-            <img src="imagens/imagem3.jpg" width="300" alt="imagem3">
-            <img src="imagens/imagem4.jpg" width="300" alt="imagem4">
-        </div>
-
-        <div class="textosobre1">
-            <h3>HABILIDADES E COMPETÊNCIAS</h3>
-                    <li>Comprometimento</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Inteligencia emocional</li>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><img src="./imagens/Logotipo Louisi .png"></a>
+            <hr>
+            <ul class="nav-menu">
+                <li class="nav-item" id="home-btn"><a href="./index.html" target="_parent" class="nav-link">HOME</a></li>
+                /
+                <li class="nav-item"><a href="#" target="_parent" class="nav-link">SOBRE</a></li>/
+                <li class="nav-item"><a href="./fotos.html" target="_parent" class="nav-link">FOTOS</a></li>/
+                <li class="nav-item"><a href="./videos.html" target="_parent" class="nav-link">VIDEOS</a></li>/
+                <li class="nav-item"><a href="./contato.html" target="_parent" class="nav-link">CONTATO</a></li>
+            </ul>
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="textosobre2">
-                <h3>Experiência profissional</h3>
-                     
+        </nav>
+    </header>
+
+    <section class="sobre">
+        <div class="header">
+            <div class="row1">
+                <h1>SOBRE MIM</h1>
+                <hr>
+            </div>
+            <div class="row2">
+                <div class="c-card">
+                    <img src="./imagens/imagem2.jpg">
+                    <h2>HABILIDADES E COMPETÊNCIAS</h2>
+                    <ul>
+                        <li>Comprometimento</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Inteligência emocional</li>
+                    </ul>
                 </div>
-                <div class="textosobre3">
-                    <h3>Idiomas</h3>
-                            <li>Inglês - nível C2</li>
-                            <li>Espanhol - nível C2</li>
-                    </div>
+                <div class="c-card">
+                    <img src="./imagens/imagem3.jpg">
+                    <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+                    <ul>
+                        <li>Em projetos universitários</li>
+                    </ul>
+                </div>
+                <div class="c-card">
+                    <img src="./imagens/imagem4.jpg">
+                    <h2>IDIOMAS</h2>
+                    <ul>
+                        <li>Inglês - nível C2</li>
+                        <li>Espanhol - nível C2</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
+</body>
+
+<script>
+    const menuBar = document.querySelector(".menu-bar");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuBar.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+</script>
+
+
+</html>

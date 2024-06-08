@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<link rel="stylesheet" href="estilo.css">
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Louisi Fonseca</title>
+        <script src="https://kit.fontawesome.com/ce94c63dce.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" type="image/png" href="./imagens/Logotipo Louisi .png" />
+    </head>
 <body>
-    <div id="principal">
-        <div id="logo">
-            <a href="home.html"><img src="imagens/Logotipo Louisi .png" width="150" alt="Logo Louisi"></a>
-        </div> <!--INSERIR O MENU-->
-       <div id="navegação"> 
-        <ul id="menu">
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-        <li><a href="fotos.html">FOTOS</a></li>
-        <li><a href="videos.html">VÍDEOS</a></li>
-        <li><a href="contato.html">CONTATOS</a></li>
-        </ul>
-       </div>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><img src="./imagens/Logotipo Louisi .png"></a>
+            <hr>
+            <ul class="nav-menu">
+                <li class="nav-item" id="home-btn"><a href="./index.html" target="_parent" class="nav-link">HOME</a></li>/
+                <li class="nav-item"><a href="./sobre.html" target="_parent" class="nav-link">SOBRE</a></li>/
+                <li class="nav-item"><a href="./fotos.html" target="_parent" class="nav-link">FOTOS</a></li>/
+                <li class="nav-item"><a href="./videos.html" target="_parent" class="nav-link">VIDEOS</a></li>/
+                <li class="nav-item"><a href="#" target="_parent" class="nav-link">CONTATO</a></li>
+            </ul>
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-    <div class="content">
+       <section class="contato">
         <h1>INFORMAÇÕES PARA CONTATO</h1>
-        <div class= botao> 
-            <li>louis.fonseca@acad.espm.br</li>
-            <li>Rua Dr.Álvaro Alvim</li>
-            <li>redes</li>
-            <li>nome </li>
-        </div>
-    </div>
+        <ul>
+            <li><a href="mailto:LOUISI.FONSECA@ACAD.ESPM.BR">LOUISI.FONSECA@ACAD.ESPM.BR</a></li>
+            <li>R. Dr. Alvaro Alvim, 123, São Paulo, SP – ESPM</li>
+            <li><a href="https://www.instagram.com/louisifonseca/" target="_blank">INSTAGRAM – @LOUISIFONSECA</a></li>
+            <li><a href="https://www.linkedin.com/in/louisi-fonseca-7b4b2a311/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
 </body>
+<script>
+    const menuBar = document.querySelector(".menu-bar");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuBar.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+</script>
 </html>
