@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louisi Fonseca</title>
+    <script src="https://kit.fontawesome.com/ce94c63dce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" type="image/png" href="./imagens/Logotipo Louisi .png" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><img src="./imagens/Logotipo Louisi .png"></a>
+            <hr>
+            <ul class="nav-menu">
+                <li class="nav-item" id="home-btn"><a href="./index.html" target="_parent" class="nav-link">HOME</a></li>
+                /
+                <li class="nav-item"><a href="./sobre.html" target="_parent" class="nav-link">SOBRE</a></li>/
+                <li class="nav-item"><a href="./fotos.html" target="_parent" class="nav-link">FOTOS</a></li>/
+                <li class="nav-item"><a href="#" target="_parent" class="nav-link">VIDEOS</a></li>/
+                <li class="nav-item"><a href="./contato.html" target="_parent" class="nav-link">CONTATO</a></li>
+            </ul>
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="videos">
+        <div class="header">
+            <div class="row1">
+                <h1>PROJETOS AUDIOVISUAIS</h1>
+                <hr>
+            </div>
+            <div class="row2">
+                <div class="c-card">
+                    <a><iframe
+                            src="https://www.youtube.com/embed/6bxWefceQc0?si=ejwD0fv0aiVsCen9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
+                    <h3>UM ATO DE SOLIDARIEDADE - MINI-DOC 2024</h3>
+                </div>
+                <div class="c-card">
+                    <a><iframe
+                            src="https://www.youtube.com/embed/QD09O9_E5Zo?si=mp6P4kn3_0HUwD-a"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+                        <h3>ANÁLISE OPERAÇÃO BIG HERO – 2024</h3>
+                </div>
+                <div class="c-card">
+                    <a><iframe
+                            src="https://www.youtube.com/embed/5xDy-xllX_g?si=Hp1J5kHubLeOelnX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
+                    <h3>DESVANECER – CURTA METRAGEM 2024</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const menuBar = document.querySelector(".menu-bar");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuBar.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener("click", () => {
+        menuBar.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+</script>
